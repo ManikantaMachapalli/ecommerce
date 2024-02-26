@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Market</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .content {
+            display: flex;
+            align-items: center;
+            background-color: brown;
+            color: white;
+        }
+        
+        .content p {
+            margin-left: 20px;
+            padding:10px;
+            padding-left: 90px;
+        }
+        
+        .p {
+            background-color: crimson;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .p input[type="text"] {
+            margin-left: 20px;
+            width: 50%;
+            padding: 1px;
+        }
+        
+        .p button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .p b {
+            margin-left: 20px;
+            padding-left: 200px;
+        }
+        
+        .p img {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        
+        .containers {
+            width:100%;
+            height: 300px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            padding: 20px;
+        }
+        
+        .mani {
+            display: inline-flex;
+            scroll-snap-type: initial;
+            width: 100%;
+        }
+        
+        .mani img {
+            scroll-snap-align: start;
+            flex: auto auto 0;
+            width: 100%;
+            margin-right: 100px;
+        }
+        
+        .side-menu {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            height: 300px;
+        }
+        
+        .category {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .main-category {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .subcategories {
+            display: none;
+            padding-left: 20px;
+        }
+        
+        .subcategories p {
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        
+        .category:hover .subcategories {
+            display: block;
+        }
+        .recently-viewed {
+             /* Enable horizontal scrolling */
+            white-space: nowrap;
+            float: right;
+            padding-right:80%;
+            width:10px;
+            margin-left:10px; /* Prevent line breaks */
+        }
+
+        .product img{
+            margin-right:100px; 
+            width: 80px;
+            height: 100px;
+            padding-left: 800px;
+        }
+        h2{
+            margin-left: 500px;
+            text-align: center;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-section:last-child {
+            margin-right: 0;
+        }
+
+        .footer-section h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .subscribe-form {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .subscribe-form input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .subscribe-form input[type="submit"] {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <h5>Quality RAM, Quality Performance: RAM Market</h5>
+        <p>impact@ram</p>
+        <p>Gift Cards</p>
+        <p>Help Center</p>
+        <p>Sell on Ram</p>
+        <p>Download app</p>
+    </section>
+    <div class="p">
+        <img src="ram_market-removebg-preview.png" alt="">
+        <input type="text" value="Search products and brands">
+        <button>Search</button>
+        <b><img src="shopping-cart-svg-png-icon-download-28.png" alt=""> Cart</b>
+        <b><img src="my-account-icon-5.jpg" alt=""> Signin</b>
+    </div>
+    <div class="containers">
+        <div class="mani">
+            <img src="Mani.jpg" alt="">
+            <img src="la-double-j-2021-2022-fall-winter-womens-milan-fashion-week-tiger-unicorn-puffer-caftan-floral-dress-denim-jeans-observer-03.jpg" alt="">
+            <img src="OIP.jpg" alt="">
+            <img src="Ecommerce-Fashion-Clothing-Websites-to-Shop-the-Latest-Trends.jpg" alt="">
+            <img src="online-clothing-business-768x384.jpg" alt=""> 
+        </div>
+    </div> 
+    <h2>RECENTLY VIEWED PRODUCTS</h2>
+    <div class="recently-viewed">
+        <div class="product">
+            <h3>Campus TERMINATOR (N) Black Running Shoes</h3>
+            <p>Rs 1,799 Rs 1,749 3% OFF</p>
+            <img src="black.webp" alt="Shoe Image">
+        </div>
+        <div class="product">
+            <h3>Campus ABACUS Blue Men's Sports Running Shoes</h3>
+            <p>Rs 2,299 Rs 2,238 3% OFF</p>
+            <img src="blue.jpg" alt="Shoe Image">
+        </div>
+        <div class="product">
+            <h3>Campus TERMINATOR (N) Black Running Shoes</h3>
+            <p>Rs 1,799 Rs 1,749 3% OFF</p>
+            <img src="black.webp" alt="Shoe Image">
+        </div>
+        
+        
+    </div>
+
+    <div class="container">
+        <div class="side-menu">
+            <div class="category">
+                <p class="main-category">Men's Fashion</p>
+                <div class="subcategories">
+                    <p>Footwear
+                        <li>Sports Shoes</li>
+                        <li>Casual Shoes</li>
+                        <li>Slippers & Flip Flops</li>
+                        <li>Sandals & Floaters</li>
+                        <li>Formal Shoes</li>
+                        <li>Loafers</li>
+                        <li>Sneakers</li>
+                        <li>Ethnic Footwear</li>
+                        <li>Shoe Accessories</li>
+                    </p>
+                </div>
+            </div>
+            <div class="category">
+                <p class="main-category">Bags & Luggage</p>
+                <div class="subcategories">
+                    <p>Backpacks</p>
+                    <p>Laptop Bags</p>
+                    <p>Hiking Bags</p>
+                    <p>Luggage & Suitcases</p>
+                    <p>Travel Accessories</p>
+                    <p>Office Bags</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-menu">
+            <div class="category">
+                <p class="main-category">Home & Kitchen</p>
+                <div class="subcategories">
+                    <p>Juicer Mixer Grinders</p>
+                    <p>Gas Stoves & Hobs</p>
+                    <p>Chimneys</p>
+                    <p>Induction Cooktops</p>
+                    <p>Kettles & Coffee Makers</p>
+                    <p>Choppers & Blenders</p>
+                    <p>Sandwich Makers</p>
+                    <p>Roti Makers</p>
+                    <p>Electric Cookers</p>
+                    <p>Air Fryers</p>
+                </div>
+            </div>
+            <div class="category">
+                <p class="main-category">Toys, Kids Fashion & more</p>
+                <div class="subcategories">
+                    <p>Toys</p>
+                    <p>Bicycles, Tricycles</p>
+                    <p>Kids Footwear</p>
+                    <p>Accessories</p>
+                    <p>Babyclothing</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div><p>Men: Shirts for Men / Casual Shirts for Men / Formal Shirts for Men / Hoodies for Men / Cotton Shirts for Men / T Shirts for Men / Polo T shirts / Kurta Pajama for Men / White Shirt / Black Shirt / Lower for Men / Trousers for Men / Jacket for Men / Formal Pants for Men / Tracksuit for Men / Jeans for Men / Kurta Payjama Sets / Kurta for Men / Blazer for Men / Sweater for Men
+        Women: Tops for Women / Kurti / Cotton Sarees / Georgette Sarees / Chiffon Sarees / Net Sarees / Dresses for Women / Jumpsuit for Women / Jeans for Women / Salwar Suit / Bra / Jacket for Women / Night Dress for Women / Sweatshirt for Women / Shorts for Women / Readymade Blouse / Dupatta / T Shirt for Women / Shirts for Women / Skirts for Women / Ethnic wear for Women / Western Dresses for Women / Leggings for Women
+        Footwear: Men's Footwear / Casual Shoes for Men / Formal Shoes for Men / Loafers for Men / Slippers for Men / Boots for Men / Sandals for Men / Footwear for Women / Heels for Women / Sandals for Women / Shoes for Women / Sandals for Women / Slippers for Women / Boots for Women / Jutti for Women / Sports Shoes for Women
+        Home & Kitchen: Wall Painting / Wall Stickers / Dream Catcher / Rangoli Designs / Clock / Wall Clock / Alarm Clock / Diya / Bean Bag / Laptop Table / Study Table / Wall Hanging / Ceiling Lights / Table Lamp / Hanging Lights / LED Bulbs / Torch Light / LED Lights / Flower Vase / Keychain / Rudraksha / Screwdriver
+        Watch: Watch For Men / Womens Watches / Smart Watch / Boys Watch / Girls Watch
+        Home Furnishing: Bed Sheet / Mosquito Net / Mattress / Curtains / Sofa Cover / Blanket / Pillow / Carpet / Apron / Quilt / Floor Mat / Towel / Pillow Cover
+        Electronics: Bluetooth Speakers / Headphones / Earphone / Ceiling Fan / Geysers / Trimmer / Hair Straightner / Hair Dryer / Water Purifier / Mixer Grinder / Gas Stove / Electric Kettle / Computer Mouse / Computer Keyboard / USB & HDMI Cables / Computer Antivirus
+        Mobiles Accessories: Mobile Covers / Leather Mobile Covers / Printed Back Covers / Tempered Glass
+        Snapdeal is India's leading pure-play value Ecommerce platform. Founded in 2010 by Kunal Bahl and Rohit Bansal, Snapdeal is one of the top four online lifestyle shopping destinations of India. Snapdeal brings together a wide assortment of good quality and value- priced merchandise on its platform. Snapdeal's vision is to enable the shoppers of Bharat to experience the joy of living their aspirations through reliable, value-for-money shopping. With a personalized, multilingual interface and cutting edge technology, Snapdeal has simplified the shopping experience for its value-conscious buyers by showcasing the most relevant products- products that are a good functional fit with their needs and of a quality that lasts- thereby delivering true value to its customers. With its commitment to high service standards, Snapdeal suppliers operate under a well structured ecosystem that enables them to offer great quality products at affordable prices. With majority of the value-seeking, middle-income, price-conscious buyers coming from the non-metros, Snapdeal’s logistics networks powered by third party logistics cover more than 96% of India’s pin codes enabling order deliveries to more than 2500 towns and cities and expanding. Further, Snapdeal's mission is to become India’s value lifestyle omni-channel leader. We are excited about continuing to build a complete ecosystem around value commerce, where we can serve Bharat consumers wherever they are on their offline to online shopping journey. Snapdeal is part of the AceVector Group and one of India’s best-known e-commerce companies with an exclusive focus on the value segment.</p></div>
+        <footer class="footer">
+            <div class="footer-section">
+                <h3>POLICY INFO</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Sale</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Report Abuse & Takedown Policy</a></li>
+                    <li><a href="#">Know Your BIS Standard</a></li>
+                    <li><a href="#">Products Under Compulsory BIS Certification</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">Impact@RamMarket</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>RAM MARKET BUSINESS</h3>
+                <ul>
+                    <li><a href="#">Shopping App</a></li>
+                    <li><a href="#">Sell on Snapdeal</a></li>
+                    <li><a href="#">Media Enquiries</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POPULAR LINKS</h3>
+                <ul>
+                    <li><a href="#">Lehenga</a></li>
+                    <li><a href="#">Kid's Clothing</a></li>
+                    <li><a href="#">Sarees</a></li>
+                    <li><a href="#">Winter Wear</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe-form">
+                <h3>SUBSCRIBE</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email address">
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+                <p>Register now to get updates on promotions and coupons. Or Download App</p>
+            </div>
+        </footer>
+</body>
+</html>
